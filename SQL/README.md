@@ -8,7 +8,7 @@ All code is written for **MySQL**, with comments explaining each command.
 
 | Status | Topic | File |
 |--------|-------|------|
-| ✅ | Basics: databases, tables, data types, INSERT, PRIMARY KEY, NULL, TRUNCATE/DROP |['Basic1.sql](https://github.com/vedhasssss/Data-Science-and-Analysis-with-GenAI/blob/main/SQL/Basic1.sql)|
+| ✅ | Basics: databases, tables, data types, INSERT, PRIMARY KEY, NULL, TRUNCATE/DROP |[Basic1.sql](https://github.com/vedhasssss/Data-Science-and-Analysis-with-GenAI/blob/main/SQL/Basic1.sql)|
 | ⬜ | SELECT with WHERE, ORDER BY, LIMIT | coming soon |
 | ⬜ | UPDATE and DELETE | coming soon |
 | ⬜ | Aggregate functions and GROUP BY | coming soon |
