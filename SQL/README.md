@@ -8,7 +8,7 @@ All code is written for **MySQL**, with comments explaining each command.
 
 | Status | Topic | File |
 |--------|-------|------|
-| ✅ | Basics: databases, tables, data types, INSERT, PRIMARY KEY, NULL, TRUNCATE/DROP | [`basics_of_sql.sql`](basics_of_sql.sql) |
+| ✅ | Basics: databases, tables, data types, INSERT, PRIMARY KEY, NULL, TRUNCATE/DROP |--|
 | ⬜ | SELECT with WHERE, ORDER BY, LIMIT | coming soon |
 | ⬜ | UPDATE and DELETE | coming soon |
 | ⬜ | Aggregate functions and GROUP BY | coming soon |
