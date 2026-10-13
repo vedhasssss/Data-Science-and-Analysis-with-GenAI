@@ -10,7 +10,8 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | ✅ | SELECT, WHERE, UPDATE, DELETE, AND, COUNT | [`02_where_update_delete.sql`](02_where_update_delete.sql) |
 | ✅ | LIMIT, ORDER BY, OFFSET, IS NULL, COALESCE, DISTINCT, GROUP BY, calculated columns | [`03_limit_orderby_null_distinct_groupby.sql`](03_limit_orderby_null_distinct_groupby.sql) |
 | ✅ | Joins: INNER, LEFT, RIGHT, FULL (UNION) | [`04_joins.sql`](04_joins.sql) |
-| ⬜ | OR, IN, BETWEEN, LIKE | coming soon |
+| ✅ | LIKE, string functions, math functions, date functions | [`05_like_string_math_date_functions.sql`](05_like_string_math_date_functions.sql) |
+| ⬜ | OR, IN, BETWEEN | coming soon |
 | ⬜ | Aggregate functions (SUM, AVG, MIN, MAX) and HAVING | coming soon |
 
 ## Cheat Sheet
@@ -32,19 +33,27 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | `LEFT JOIN` | all rows from the left table, NULL where no match |
 | `RIGHT JOIN` | all rows from the right table, NULL where no match |
 | `LEFT JOIN ... UNION ... RIGHT JOIN` | full join (MySQL has no `FULL JOIN`) |
+| `LIKE "R%"` / `"%h"` / `"%re%"` | starts with / ends with / contains |
+| `UPPER()` / `LOWER()` / `LENGTH()` | change case / count characters |
+| `SUBSTRING(text, start, len)` | take part of a string (position starts at 1) |
+| `CONCAT(a, " ", b)` | join strings together |
+| `REPLACE(text, old, new)` | swap part of a string |
+| `ROUND()` / `CEIL()` / `FLOOR()` | round nearest / up / down |
+| `CURRENT_DATE()` / `CURRENT_TIMESTAMP()` | today's date / date and time now |
+| `YEAR()` / `MONTH()` / `DAY()` | pull a part out of a date |
 
 ## How to Run
 
 1. Install MySQL (or use MySQL Workbench / XAMPP).
 2. Run a file:
    ```bash
-   mysql -u root -p < 04_joins.sql
+   mysql -u root -p < 05_like_string_math_date_functions.sql
    ```
    Or open it in MySQL Workbench and run it section by section.
 
 Notes:
-- `02_where_update_delete.sql` uses the **classicmodels** sample database, which you need to import first.
-- `03_...sql` creates its own `employees` table, but you'll need to insert some sample rows before the queries return anything.
+- `02_...sql` and `05_...sql` use the **classicmodels** sample database, which you need to import first.
+- `03_...sql` creates its own `employees` table, but you'll need to insert some sample rows before the queries return anything. `05_...sql` also reuses that `employees` table (in `db4`) for the date functions.
 - `04_joins.sql` is fully self-contained: it creates the tables and inserts the sample data.
 - `DROP`, `TRUNCATE`, and `DELETE` remove data permanently, so test them on practice databases only.
 
@@ -57,6 +66,7 @@ SQL/
 ├── 02_where_update_delete.sql
 ├── 03_limit_orderby_null_distinct_groupby.sql
 ├── 04_joins.sql
+├── 05_like_string_math_date_functions.sql
 └── ...more as I learn
 ```
 
