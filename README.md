@@ -1,78 +1,51 @@
-# SQL
+# Data Science and Analysis with GenAI
 
-Everything I learn about SQL since joining the Data Science & Analytics with GenAI course. One file per lecture (or topic group), all written for **MySQL** with comments explaining each command. I keep adding to this as the course moves forward.
+My notes, code, and practice work from the **Data Science & Analytics with GenAI** course at IT Vedant. Everything is organized topic-wise, and I'm adding to it as the course moves forward.
 
-## Progress
+## Topics
 
-| Status | Topic | File |
-|--------|-------|------|
-| ✅ | Basics: databases, tables, data types, INSERT, PRIMARY KEY, NULL, TRUNCATE/DROP | [`Basic1.sql`](Basic1.sql) |
-| ✅ | SELECT, WHERE, UPDATE, DELETE, AND, COUNT | [`02_where_update_delete.sql`](02_where_update_delete.sql) |
-| ✅ | LIMIT, ORDER BY, OFFSET, IS NULL, COALESCE, DISTINCT, GROUP BY, calculated columns | [`03_limit_orderby_null_distinct_groupby.sql`](03_limit_orderby_null_distinct_groupby.sql) |
-| ✅ | Joins: INNER, LEFT, RIGHT, FULL (UNION) | [`04_joins.sql`](04_joins.sql) |
-| ✅ | LIKE, string functions, math functions, date functions | [`05_like_string_math_date_functions.sql`](05_like_string_math_date_functions.sql) |
-| ⬜ | OR, IN, BETWEEN | coming soon |
-| ⬜ | Aggregate functions (SUM, AVG, MIN, MAX) and HAVING | coming soon |
+| Status | Topic | Folder |
+|--------|-------|--------|
+| ✅ | SQL (MySQL): databases, tables, CRUD, filtering, sorting, grouping | [`SQL/`](SQL/) |
+| ⬜ | Excel | coming soon |
+| ⬜ | Power BI | coming soon |
+| ⬜ | Tableau | coming soon |
+| ⬜ | Python for Data Analysis | coming soon |
+| ⬜ | Machine Learning | coming soon |
+| ⬜ | Deep Learning (TensorFlow) | coming soon |
+| ⬜ | NLP and LLMs / GenAI | coming soon |
 
-## Cheat Sheet
+## What's Inside
 
-| Command | What it does |
-|---------|--------------|
-| `SELECT ... FROM ... WHERE` | read rows that match a condition |
-| `UPDATE ... SET ... WHERE` | change existing rows |
-| `DELETE FROM ... WHERE` | remove specific rows |
-| `TRUNCATE TABLE` | remove all rows, keep the table |
-| `DROP TABLE` / `DROP DATABASE` | remove the table / database entirely |
-| `ORDER BY col DESC` | sort results |
-| `LIMIT n OFFSET m` | take n rows after skipping m |
-| `IS NULL` / `IS NOT NULL` | find missing / present values |
-| `COALESCE(col, 0)` | replace NULL with a default |
-| `DISTINCT` | unique values only |
-| `GROUP BY` | group rows to count/aggregate per group |
-| `INNER JOIN` | only rows that match in both tables |
-| `LEFT JOIN` | all rows from the left table, NULL where no match |
-| `RIGHT JOIN` | all rows from the right table, NULL where no match |
-| `LEFT JOIN ... UNION ... RIGHT JOIN` | full join (MySQL has no `FULL JOIN`) |
-| `LIKE "R%"` / `"%h"` / `"%re%"` | starts with / ends with / contains |
-| `UPPER()` / `LOWER()` / `LENGTH()` | change case / count characters |
-| `SUBSTRING(text, start, len)` | take part of a string (position starts at 1) |
-| `CONCAT(a, " ", b)` | join strings together |
-| `REPLACE(text, old, new)` | swap part of a string |
-| `ROUND()` / `CEIL()` / `FLOOR()` | round nearest / up / down |
-| `CURRENT_DATE()` / `CURRENT_TIMESTAMP()` | today's date / date and time now |
-| `YEAR()` / `MONTH()` / `DAY()` | pull a part out of a date |
+- **[SQL](SQL/)**: one file per lecture, each with comments explaining every command, plus a cheat sheet.
 
-## How to Run
+More folders will show up here as I cover each topic.
 
-1. Install MySQL (or use MySQL Workbench / XAMPP).
-2. Run a file:
+## How to Use This Repo
+
+1. Clone it:
    ```bash
-   mysql -u root -p < 05_like_string_math_date_functions.sql
+   git clone https://github.com/vedhasssss/Data-Science-and-Analysis-with-GenAI.git
    ```
-   Or open it in MySQL Workbench and run it section by section.
+2. Open a topic folder and read its own `README.md` for setup steps and file order.
 
-Notes:
-- `02_...sql` and `05_...sql` use the **classicmodels** sample database, which you need to import first.
-- `03_...sql` creates its own `employees` table, but you'll need to insert some sample rows before the queries return anything. `05_...sql` also reuses that `employees` table (in `db4`) for the date functions.
-- `04_joins.sql` is fully self-contained: it creates the tables and inserts the sample data.
-- `DROP`, `TRUNCATE`, and `DELETE` remove data permanently, so test them on practice databases only.
-
-## Folder Structure
+## Structure
 
 ```
-SQL/
+Data-Science-and-Analysis-with-GenAI/
 ├── README.md
-├── Basic1.sql
-├── 02_where_update_delete.sql
-├── 03_limit_orderby_null_distinct_groupby.sql
-├── 04_joins.sql
-├── 05_like_string_math_date_functions.sql
-└── ...more as I learn
+├── SQL/
+│   ├── README.md
+│   ├── Basic1.sql
+│   ├── 02_where_update_delete.sql
+│   ├── 03_limit_orderby_null_distinct_groupby.sql
+│   ├── 04_joins.sql
+│   └── 05_like_string_math_date_functions.sql
+└── ...more topics soon
 ```
 
-## Notes
+## About
 
-- Sample data is dummy data.
-- Files are meant to be read and run top to bottom.
+I'm Vedhas Shinde, an IT graduate from Mumbai building a career in data analysis and web development. This repo is my learning log, so expect it to grow (and get cleaner) over time.
 
-— Vedhas Shinde
+**GitHub:** [@vedhasssss](https://github.com/vedhasssss)
