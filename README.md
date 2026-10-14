@@ -40,7 +40,8 @@ Data-Science-and-Analysis-with-GenAI/
 │   ├── 02_where_update_delete.sql
 │   ├── 03_limit_orderby_null_distinct_groupby.sql
 │   ├── 04_joins.sql
-│   └── 05_like_string_math_date_functions.sql
+│   ├── 05_like_string_math_date_functions.sql
+│   └── 06_date_math_views_aggregates.sql
 └── ...more topics soon
 ```
 
