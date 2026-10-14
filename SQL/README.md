@@ -24,10 +24,10 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | `UPDATE ... SET ... WHERE` | change existing rows |
 | `DELETE FROM ... WHERE` | remove specific rows |
 | `TRUNCATE TABLE` | remove all rows, keep the table |
-| `DROP TABLE` / `DROP DATABASE` | remove the table/database entirely |
+| `DROP TABLE` / `DROP DATABASE` | remove the table / database entirely |
 | `ORDER BY col DESC` | sort results |
 | `LIMIT n OFFSET m` | take n rows after skipping m |
-| `IS NULL` / `IS NOT NULL` | find missing/present values |
+| `IS NULL` / `IS NOT NULL` | find missing / present values |
 | `COALESCE(col, 0)` | replace NULL with a default |
 | `DISTINCT` | unique values only |
 | `GROUP BY` | group rows to count/aggregate per group |
