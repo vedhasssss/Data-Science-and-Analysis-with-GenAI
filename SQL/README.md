@@ -12,8 +12,8 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | ✅ | Joins: INNER, LEFT, RIGHT, FULL (UNION) | [`04_joins.sql`](04_joins.sql) |
 | ✅ | LIKE, string functions, math functions, date functions | [`05_like_string_math_date_functions.sql`](05_like_string_math_date_functions.sql) |
 | ✅ | DATE_ADD/DATE_SUB, DATEDIFF, views, SUM/AVG/MIN/MAX | [`06_date_math_views_aggregates.sql`](06_date_math_views_aggregates.sql) |
+| ✅ | Keys: PRIMARY KEY, UNIQUE, FOREIGN KEY | [`07_keys_and_constraints.sql`](07_keys_and_constraints.sql) |
 | ⬜ | Window functions (RANK) | coming soon |
-| ⬜ | Keys (primary, foreign) | coming soon |
 | ⬜ | OR, IN, BETWEEN, HAVING | coming soon |
 
 ## Cheat Sheet
@@ -47,20 +47,23 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | `DATEDIFF(date1, date2)` | days between two dates |
 | `CREATE VIEW name AS SELECT ...` | save a query and use it like a table |
 | `SUM()` / `AVG()` / `MIN()` / `MAX()` | total / average / lowest / highest |
+| `PRIMARY KEY` | unique + not NULL, identifies each row |
+| `UNIQUE` | no duplicates in the column (NULL allowed) |
+| `FOREIGN KEY (c_id) REFERENCES customer(c_id)` | link a column to another table's primary key |
 
 ## How to Run
 
 1. Install MySQL (or use MySQL Workbench / XAMPP).
 2. Run a file:
    ```bash
-   mysql -u root -p < 06_date_math_views_aggregates.sql
+   mysql -u root -p < 07_keys_and_constraints.sql
    ```
    Or open it in MySQL Workbench and run it section by section.
 
 Notes:
 - `02_...sql` and `05_...sql` use the **classicmodels** sample database, which you need to import first.
 - `03_...sql` creates its own `employees` table, but you'll need to insert some sample rows before the queries return anything. `05_...sql` and `06_...sql` reuse that `employees` table (in `db4`).
-- `04_joins.sql` is fully self-contained: it creates the tables and inserts the sample data.
+- `04_joins.sql` and `07_keys_and_constraints.sql` are fully self-contained: they create the tables and insert the sample data.
 - `DROP`, `TRUNCATE`, and `DELETE` remove data permanently, so test them on practice databases only.
 
 ## Folder Structure
@@ -74,6 +77,7 @@ SQL/
 ├── 04_joins.sql
 ├── 05_like_string_math_date_functions.sql
 ├── 06_date_math_views_aggregates.sql
+├── 07_keys_and_constraints.sql
 └── ...more as I learn
 ```
 
