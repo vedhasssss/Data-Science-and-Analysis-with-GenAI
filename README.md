@@ -41,7 +41,9 @@ Data-Science-and-Analysis-with-GenAI/
 │   ├── 03_limit_orderby_null_distinct_groupby.sql
 │   ├── 04_joins.sql
 │   ├── 05_like_string_math_date_functions.sql
-│   └── 06_date_math_views_aggregates.sql
+│   ├── 06_date_math_views_aggregates.sql
+│   ├── 07_keys_and_constraints.sql
+│   └── 08_or_in_between_having_window_functions.sql
 └── ...more topics soon
 ```
 
