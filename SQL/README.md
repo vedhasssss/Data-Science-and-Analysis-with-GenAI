@@ -13,8 +13,9 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | ✅ | LIKE, string functions, math functions, date functions | [`05_like_string_math_date_functions.sql`](05_like_string_math_date_functions.sql) |
 | ✅ | DATE_ADD/DATE_SUB, DATEDIFF, views, SUM/AVG/MIN/MAX | [`06_date_math_views_aggregates.sql`](06_date_math_views_aggregates.sql) |
 | ✅ | Keys: PRIMARY KEY, UNIQUE, FOREIGN KEY | [`07_keys_and_constraints.sql`](07_keys_and_constraints.sql) |
-| ⬜ | Window functions (RANK) | coming soon |
-| ⬜ | OR, IN, BETWEEN, HAVING | coming soon |
+| ✅ | Self-study: OR, IN, BETWEEN, HAVING, window functions (ROW_NUMBER, RANK, DENSE_RANK) | [`08_or_in_between_having_window_functions.sql`](08_or_in_between_having_window_functions.sql) |
+
+Files 01 to 07 follow the lectures. File 08 covers extra topics I studied on my own.
 
 ## Cheat Sheet
 
@@ -50,20 +51,28 @@ Everything I learn about SQL since joining the Data Science & Analytics with Gen
 | `PRIMARY KEY` | unique + not NULL, identifies each row |
 | `UNIQUE` | no duplicates in the column (NULL allowed) |
 | `FOREIGN KEY (c_id) REFERENCES customer(c_id)` | link a column to another table's primary key |
+| `WHERE a OR b` | at least one condition is true (use brackets when mixing with `AND`) |
+| `IN ("IT", "HR")` / `NOT IN (...)` | match any value in a list / none of them |
+| `BETWEEN 50000 AND 60000` | inside a range, both ends included |
+| `GROUP BY ... HAVING SUM(x) > n` | filter groups after grouping (`WHERE` filters rows before) |
+| `ROW_NUMBER() OVER (ORDER BY x)` | number the rows 1, 2, 3 ... |
+| `RANK()` / `DENSE_RANK()` | rank with ties (RANK skips numbers, DENSE_RANK doesn't) |
+| `... OVER (PARTITION BY dept ORDER BY x)` | restart the calculation for each group, keeping all rows |
 
 ## How to Run
 
 1. Install MySQL (or use MySQL Workbench / XAMPP).
 2. Run a file:
    ```bash
-   mysql -u root -p < 07_keys_and_constraints.sql
+   mysql -u root -p < 08_or_in_between_having_window_functions.sql
    ```
    Or open it in MySQL Workbench and run it section by section.
 
 Notes:
 - `02_...sql` and `05_...sql` use the **classicmodels** sample database, which you need to import first.
 - `03_...sql` creates its own `employees` table, but you'll need to insert some sample rows before the queries return anything. `05_...sql` and `06_...sql` reuse that `employees` table (in `db4`).
-- `04_joins.sql` and `07_keys_and_constraints.sql` are fully self-contained: they create the tables and insert the sample data.
+- `04_...sql`, `07_...sql` and `08_...sql` are fully self-contained: they create the tables and insert the sample data.
+- `08_...sql` needs **MySQL 8.0 or newer** because of the window functions.
 - `DROP`, `TRUNCATE`, and `DELETE` remove data permanently, so test them on practice databases only.
 
 ## Folder Structure
@@ -78,7 +87,7 @@ SQL/
 ├── 05_like_string_math_date_functions.sql
 ├── 06_date_math_views_aggregates.sql
 ├── 07_keys_and_constraints.sql
-└── ...more as I learn
+└── 08_or_in_between_having_window_functions.sql
 ```
 
 ## Notes
