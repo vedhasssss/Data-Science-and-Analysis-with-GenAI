@@ -10,7 +10,7 @@ My notes, code, and practice work from the **Data Science & Analytics with GenAI
 | ⬜ | Excel | coming soon |
 | ⬜ | Power BI | coming soon |
 | ⬜ | Tableau | coming soon |
-| ⬜ | Python for Data Analysis | coming soon |
+| 🔄 | Python (in progress) | [`Python/`](Python/) |
 | ⬜ | Machine Learning | coming soon |
 | ⬜ | Deep Learning (TensorFlow) | coming soon |
 | ⬜ | NLP and LLMs / GenAI | coming soon |
@@ -44,6 +44,9 @@ Data-Science-and-Analysis-with-GenAI/
 │   ├── 06_date_math_views_aggregates.sql
 │   ├── 07_keys_and_constraints.sql
 │   └── 08_or_in_between_having_window_functions.sql
+├── Python/
+│   ├── README.md
+│   └── ...one file per lecture
 └── ...more topics soon
 ```
 
