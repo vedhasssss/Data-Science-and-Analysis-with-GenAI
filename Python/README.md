@@ -6,8 +6,9 @@ Everything I learn about Python since it started in the Data Science & Analytics
 
 | Status | Topic | File |
 |--------|-------|------|
-| ⬜ | Basics: variables, data types, input/output | coming soon |
-| ⬜ | Operators and conditions (if / elif / else) | coming soon |
+| ✅ | Lectures 1-2: print, variables, data types, input() and type conversion | [`01_variables_datatypes_input.py`](01_variables_datatypes_input.py) |
+| ✅ | Lecture 3: operators (arithmetic, comparison, logical, membership, identity), if-else | [`02_operators_and_conditions.py`](02_operators_and_conditions.py) |
+| ✅ | Lecture 4: if, if-else, elif | [`03_if_elif_else.py`](03_if_elif_else.py) |
 | ⬜ | Loops (for, while) | coming soon |
 | ⬜ | Strings | coming soon |
 | ⬜ | Lists, tuples, sets, dictionaries | coming soon |
@@ -24,7 +25,7 @@ I'll rename, reorder or remove rows to match what the course actually covers, an
 1. Install [Python 3](https://www.python.org/downloads/).
 2. Run a file:
    ```bash
-   python 01_basics.py
+   python 01_variables_datatypes_input.py
    ```
    Files saved as notebooks (`.ipynb`) open in Jupyter Notebook, VS Code or Google Colab.
 
@@ -33,7 +34,10 @@ I'll rename, reorder or remove rows to match what the course actually covers, an
 ```
 Python/
 ├── README.md
-└── ...one file per lecture, added as I learn
+├── 01_variables_datatypes_input.py
+├── 02_operators_and_conditions.py
+├── 03_if_elif_else.py
+└── ...more as I learn
 ```
 
 ## Notes
