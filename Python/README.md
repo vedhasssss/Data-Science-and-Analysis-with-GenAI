@@ -9,7 +9,8 @@ Everything I learn about Python since it started in the Data Science & Analytics
 | ✅ | Lectures 1-2: print, variables, data types, input() and type conversion | [`01_variables_datatypes_input.py`](01_variables_datatypes_input.py) |
 | ✅ | Lecture 3: operators (arithmetic, comparison, logical, membership, identity), if-else | [`02_operators_and_conditions.py`](02_operators_and_conditions.py) |
 | ✅ | Lecture 4: if, if-else, elif | [`03_if_elif_else.py`](03_if_elif_else.py) |
-| ⬜ | Loops (for, while) | coming soon |
+| ✅ | Lecture 5: for loop, range(), while loop | [`04_for_and_while_loops.py`](04_for_and_while_loops.py) |
+| ✅ | Lecture 6: break, continue, pass, loop practice | [`05_break_continue_pass.py`](05_break_continue_pass.py) |
 | ⬜ | Strings | coming soon |
 | ⬜ | Lists, tuples, sets, dictionaries | coming soon |
 | ⬜ | Functions | coming soon |
@@ -37,6 +38,8 @@ Python/
 ├── 01_variables_datatypes_input.py
 ├── 02_operators_and_conditions.py
 ├── 03_if_elif_else.py
+├── 04_for_and_while_loops.py
+├── 05_break_continue_pass.py
 └── ...more as I learn
 ```
 
