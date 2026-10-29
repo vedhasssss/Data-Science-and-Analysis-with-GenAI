@@ -11,8 +11,9 @@ Everything I learn about Python since it started in the Data Science & Analytics
 | ✅ | Lecture 4: if, if-else, elif | [`03_if_elif_else.py`](03_if_elif_else.py) |
 | ✅ | Lecture 5: for loop, range(), while loop | [`04_for_and_while_loops.py`](04_for_and_while_loops.py) |
 | ✅ | Lecture 6: break, continue, pass, loop practice | [`05_break_continue_pass.py`](05_break_continue_pass.py) |
-| ⬜ | Strings | coming soon |
-| ⬜ | Lists, tuples, sets, dictionaries | coming soon |
+| ✅ | Lecture 7: lists (indexing, slicing, methods) | [`06_lists.py`](06_lists.py) |
+| ✅ | Lecture 8: dictionaries, strings | [`07_dictionaries_and_strings.py`](07_dictionaries_and_strings.py) |
+| ⬜ | Tuples and sets | coming soon |
 | ⬜ | Functions | coming soon |
 | ⬜ | File handling and error handling | coming soon |
 | ⬜ | NumPy | coming soon |
@@ -40,6 +41,8 @@ Python/
 ├── 03_if_elif_else.py
 ├── 04_for_and_while_loops.py
 ├── 05_break_continue_pass.py
+├── 06_lists.py
+├── 07_dictionaries_and_strings.py
 └── ...more as I learn
 ```
 
