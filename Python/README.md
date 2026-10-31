@@ -13,8 +13,10 @@ Everything I learn about Python since it started in the Data Science & Analytics
 | ✅ | Lecture 6: break, continue, pass, loop practice | [`05_break_continue_pass.py`](05_break_continue_pass.py) |
 | ✅ | Lecture 7: lists (indexing, slicing, methods) | [`06_lists.py`](06_lists.py) |
 | ✅ | Lecture 8: dictionaries, strings | [`07_dictionaries_and_strings.py`](07_dictionaries_and_strings.py) |
-| ⬜ | Tuples and sets | coming soon |
-| ⬜ | Functions | coming soon |
+| ✅ | Lecture 9: string methods, string formatting (format, f-strings) | [`08_string_methods.py`](08_string_methods.py) |
+| ✅ | Lecture 9 (part 2): sets | [`09_sets.py`](09_sets.py) |
+| ✅ | Lecture 10: tuples | [`10_tuples.py`](10_tuples.py) |
+| ✅ | Lecture 10 (part 2): functions, parameters, return | [`11_functions.py`](11_functions.py) |
 | ⬜ | File handling and error handling | coming soon |
 | ⬜ | NumPy | coming soon |
 | ⬜ | Pandas | coming soon |
@@ -43,6 +45,10 @@ Python/
 ├── 05_break_continue_pass.py
 ├── 06_lists.py
 ├── 07_dictionaries_and_strings.py
+├── 08_string_methods.py
+├── 09_sets.py
+├── 10_tuples.py
+├── 11_functions.py
 └── ...more as I learn
 ```
 
